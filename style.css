@@ -494,7 +494,7 @@ li{
 @media screen and (max-width:800px) {
     .hero{
         flex-direction: column-reverse;
-        height: 200vh;
+        height: 180vh;
         gap: 50px;
     }
     .hero_text{
