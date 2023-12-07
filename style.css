@@ -332,7 +332,94 @@ li{
     background-color: #d35811;
     border-color: #d35811;
 }
-
+.disc_card img{
+    border-radius: 1rem !important;
+    max-width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+.disc_img_card{
+    max-width: 17em;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    --bs-gutter-x: .5rem;
+}
+.disc_card{
+    width: inherit;
+    height: fit-content;
+}
+.card_text{
+    position: absolute;
+    bottom:0px;
+    left: 0px;
+    border-radius: 0 1.25rem 0 1rem;
+    line-height: 0.8125rem;
+    background-color: #FFB30E !important;
+    padding: 1.8rem !important;
+    display: inline-block;
+    font-size: em;
+    font-weight: 700;
+    color: #FFFEFE;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    display: flex;
+    
+}
+.card_text div:first-child{
+    line-height: 0.8125rem;
+    font-size: 3.58318rem;
+    
+}
+.card_text div:last-child{
+    font-size: 1.44rem;
+    place-self: center;
+}
+.card_text div:last-child div{
+    font-weight: 400 !important;
+    font-size: 1.2rem !important;
+    margin-top: 0.2rem !important;
+}
+.disc_card_text{
+    width: 70%;
+}
+.disc_card_text div:first-child{
+    color: #212121 !important;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #212121;
+}
+.disc_card_text div:last-child{
+    line-height: 0.8125rem;
+    background-color: #fdeadf;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+    display: inline-block;
+    color: #F17228;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 0.8125rem;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.5rem;
+}
+.fore_card{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-block: 5em;
+}
 @media screen and (max-width: 1200px){
     .hero_text_1::after{
         font-size: 2.48832rem !important;
