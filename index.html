@@ -42,9 +42,9 @@
                                     <form action="">
                                         <div class="input_icons">
                                             <i class="fa-solid fa-magnifying-glass"></i>
-                                            <input type="search" name="searh" id="search" placeholder="Search Food">
+                                            <input type="search" name="searh" id="search" class="input_search" placeholder="Search Food">
                                         </div>
-                                        <button type="submit" value="Login" id="sumbit"><span><i class="fa-solid fa-user"></i> Login</span></button>
+                                        <button type="submit" value="Login" id="sumbit" class="input_submit"><span><i class="fa-solid fa-user"></i> Login</span></button>
                                     </form>
                                 </span>
                             </div>
@@ -56,16 +56,18 @@
     <section class="hero">
             <div class="hero_text">
                 <h1 class="hero_text_1"></h1>
-                <h1 class="hero_text_2">Within a few clicks, find meals<br>that are accesible near you</h1>
+                <h1 class="hero_text_2">Within a few clicks, find meals that are accesible near you</h1>
                 <div class="hero_card">
                     <div class="hero_card_btn">
-                        <button>Delivery</button>
-                        <button>Pickup</button>
+                        <button ><i class="fa-solid fa-motorcycle"></i>Delivery</button>
+                        <button><i class ="fa-solid fa-bag-shopping"></i>Pickup</button>
                     </div>
-                    <hr class="hero_hr">
-                    <div>
-                        <input type="text" id="location" placeholder="Enter Your Adress">
-                        <input type="submit" value="Find Food">
+                    <div class="hero_form">
+                        <div class="hero_icons">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <input type="text" id="location" placeholder="Enter Your Adress" class="hero_loc">
+                        </div>
+                        <input type="submit" value="Find Food" class="hero_sumbit">
                     </div>
                 </div>
             </div>

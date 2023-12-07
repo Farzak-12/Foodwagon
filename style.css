@@ -127,7 +127,7 @@ li{
 .input_icons{
     display: inline;
 }
-#search{
+.input_search{
     padding: 10px 10px 10px 30px ;
     border: none;
     background: #FCFCFC;
@@ -139,7 +139,7 @@ li{
     color: #424242;
     transition: outline 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
-#sumbit{
+.input_submit{
     background: #FCFCFC;
     display: inline-block;
     font-weight: 700;
@@ -157,7 +157,7 @@ li{
     color: #FFB30E;
     box-shadow: 0 0 3rem 0 rgba(255, 179, 14, 0.3);
 }
-#sumbit:hover{
+.input_submit:hover{
     cursor: pointer;
 }
 .location i{
@@ -166,26 +166,35 @@ li{
 .hero{
     background-color: #FFB30E !important;
     padding-top: 10rem !important;
-    padding-bottom:rem !important;
     overflow: hidden !important;
     height: 100vh;
     justify-content: center;
     display: flex;
-    
+    gap:100px;
 }
 .hero_container{
 
 }
+.input_icons i{
+    position: absolute;
+    padding: 10px;
+    color: #FFB30E;
+    vertical-align: middle;
+}
 @keyframes change{
+    
     0%{opacity: 0%;}
     13%{content: "Are you Starving?";opacity: 100%; }
-    28%{opacity: 0%; }
+    26%{opacity: 0%; }
     43%{ content: "Ṣé ebi ń pa ẹ́?"; opacity: 100%;}
-    57%{opacity: 0%;transform: translateY(8px);}
+    57%{opacity: 0%;}
     73%{content: "Kana ji yunwa?";opacity: 100%; }
-    87%{opacity: 0%;transform: translateY(8px);}
+    87%{opacity: 0%;}
     100%{content: "Agụụ na-agụ gị?";opacity: 100%; }
     
+}
+.hero_text{
+    width: 40vw;
 }
 .hero_text_1::after{
     content: "Are you Starving?";
@@ -194,8 +203,8 @@ li{
     animation-name:change;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-duration:6s;
-    font-size: 4.29982rem;
+    animation-duration:8s;
+    font-size: 3.7rem;
 }
 .hero_text_2{
     font-weight: 700;
@@ -206,15 +215,143 @@ li{
     margin-top: -20px;
 }
 .hero_img{
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 110%;
+    max-height: 110%;
     vertical-align: middle;
     transition: all 0.5s ease-in-out;
 }
 .hero_img:hover{
     transform: translateY(-3em);
 }
+.hero_card_btn{
+    border-bottom: 1px solid #EEEEEE;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #424242;
+    text-align: left;
+}
+.hero_card_btn button{
+    background: none;
+    border: 1px solid transparent;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    margin-bottom: 1rem;
+    display: block;
+  
+    isolation: isolate;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.5rem 1rem;
+    color: #757575;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+.hero_card_btn button:hover{
+    color: black;
+    border-color: #F5F5F5 #F5F5F5 #EEEEEE;
+}
+.hero_card_btn button:focus{
+    color: #F17228;
+    background-color: rgba(241, 114, 40, 0.15);
+    border-color: transparent;
+}
 
+.hero_card_btn i{
+    margin-right: 0.5rem;
+}
+.hero_card{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    width: 30em;
+    word-wrap: break-word;
+    background-color: #FFFEFE;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.5rem;
+    text-align: left;
+    padding: 1rem;
+}
+.hero_form{
+    margin-top: 1em;
+
+}
+.hero_icon{
+    display: inline;
+}
+.hero_loc{
+    padding: 10px;
+    vertical-align: middle;
+    border: 0 solid #E0E0E0;
+    border-radius: 0.25rem;
+    width: 65%;
+    padding: 0.5rem 2.2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #424242;
+    background-color: #F5F5F5;
+}
+.hero_icons i{
+    position: absolute;
+    padding: 10px;
+    color: #FFB30E;
+    vertical-align: middle;
+}
+.hero_icons{
+    display: inline;
+}
+.hero_icons input{
+
+}
+.hero_sumbit{
+    color: #FFFEFE;
+    background-color: #F17228;
+    border-color: #F17228;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: 0.5rem 2.2rem;
+    font-size: 1rem;
+    border-radius: 0.2rem;
+}
+.hero_sumbit:hover{
+    cursor: pointer;
+    background-color: #d35811;
+    border-color: #d35811;
+}
+
+@media screen and (max-width: 1200px){
+    .hero_text_1::after{
+        font-size: 2.48832rem !important;
+}
+    .hero_pic{
+        /* height: fit-content;
+        width: fit-content; */
+    }
+    .hero_img{
+        max-width: 80%;
+        max-height: 80%;
+        transition: all 0.5s ease-in-out;
+        margin-top: 20%;
+        margin-left: 20%;
+}
+    .hero_text{
+        width: 39vw;
+    }
+}
 @media screen and (max-width:1027px) {
     .nav_menu{
         position: absolute;
@@ -253,6 +390,48 @@ li{
         transform: rotate(90deg);
     }
 }
+
+@media screen and (max-width:800px) {
+    .hero{
+        flex-direction: column-reverse;
+        height: 225vh;
+        gap: 50px;
+    }
+    .hero_text{
+        text-align: center;
+        margin-inline: auto;
+        height: 100%;
+        width: 100%;
+    }
+    .hero_text_1::after{
+        font-size: calc(1.55498rem + 3.65978vw)
+    }
+    .hero_card{
+        margin-inline: auto;
+    }
+    .hero_pic{
+        margin-inline: auto;
+    }
+    .hero_img{
+        max-width: 100%;
+        max-height: 100%;
+        margin-inline: auto;
+        vertical-align: middle;
+        transition: all 0.5s ease-in-out;
+    }
+    .hero_loc{
+        display: block;
+        width: 100%;
+    }
+    .hero_sumbit{
+        width: 100%;
+        margin-top: 1em;
+    }
+    .hero_card{
+        width: 80%;
+    }
+}
+
 @media screen and (min-width:1027px) {
     .nav{
         height: auto;
