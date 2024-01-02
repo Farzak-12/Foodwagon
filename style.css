@@ -753,7 +753,7 @@ element.style {
 .search_nav{
     display: flex;
     justify-content: space-between;
-    padding-inline: 10em;
+    padding-inline: 10%;
 }
 .search_nav h1{
     font-size: 2.48832rem;
@@ -940,7 +940,8 @@ footer a:hover{
 }
 footer{
     background-color: #212121 !important;
-    padding: 5rem;
+    padding: 3rem;
+    text-align: center;
 }
 footer hr{
     background-color: #424242 !important;
@@ -957,6 +958,8 @@ footer hr{
 .row_icons{
     display: flex;
     flex-wrap: wrap;
+    margin-inline: auto;
+    justify-content: center;
 }
 .row_form{
 }
@@ -975,7 +978,8 @@ footer hr{
     font-weight: 400;
     line-height: 1.5;
     color: #424242;
-    display: inline;
+    display:inline;
+    width:100;
 }
 .mail_icons i{
     position: absolute;
@@ -993,12 +997,13 @@ footer hr{
     font-size: 1.2rem;
     font-weight: 700;
     line-height: 2;
+    text-align: center;
 }
 .row_form h2{
     margin-top: 1.8rem !important;
     margin-bottom: 1.8rem !important;
-    width: 15em;
     font-size: calc(1.2978rem + .5736vw);
+    text-align: center;
 }
 .sus{
     padding: 10px;
@@ -1215,6 +1220,10 @@ footer hr{
         flex-direction: column;
         text-align: center;
         margin-inline: auto;
+    }
+    
+    .search_nav h1{
+        font-size: 1.5em;
     }
 }
 @media screen and (min-width:1027px) {
