@@ -134,7 +134,7 @@ body{
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     height: 1000vh;
-    overflow : hidden ;
+    overflow : hidden;
 }
 .sign{
     width: 30%;
