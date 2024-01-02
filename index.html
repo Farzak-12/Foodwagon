@@ -8,16 +8,28 @@
     <script src="https://kit.fontawesome.com/1f946127e0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="assets/img/favicons/android-chrome-512x512.png" type="image/x-icon">
 </head>
+<style>
+    .swiper {
+      width: 90%;
+      height: 80%;
+    }
+
+    .swiper-slide {
+      display: flex;
+    }
+  </style>
+</style>
 <body>
     
     <header>
-        <nav class="nav container">
+        <nav class="nav container1">
             
             <div class="nav_data">
                 <a href="#"><img src="assets/img/gallery/logo.svg" alt=""><span class="logo_text">foodwaGon</span></a>
@@ -45,11 +57,12 @@
                                             <i class="fa-solid fa-magnifying-glass"></i>
                                             <input type="search" name="searh" id="search" class="input_search" placeholder="Search Food">
                                         </div>
-                                        <button type="submit" value="Login" id="sumbit" class="input_submit"><span><i class="fa-solid fa-user"></i> Login</span></button>
+                                        
                                     </form>
                                 </span>
                             </div>
                         </li>
+                        <li><a class="nav_link" href="main_page/login.html"><button id="sumbit" class="input_submit"><span><i class="fa-solid fa-user"></i> Login</span></button></a></li>
                     </ul>
                 </div>
         </nav>
@@ -134,6 +147,571 @@
             </div>
         </div>
     </section>
+    <section class="swipe">
+    <h1 class="swipe_head">Popular Items</h1>
+    <div class="swiper mySwiper container">
+        
+        <div class="swiper-wrapper content">
+        
+          <div class="swiper-slide card" >
+            <div class="card-container">
+                <div class="image">
+                    <img src="assets/img/gallery/cheese-burger.png" alt="">
+                </div>
+                <div class="swipe_card_text">
+                    <span class="food_name">Cheese-burger</span>
+                    <span class="swipe_loc"><i class="fa-solid fa-location-dot"></i>Burger Arena</span>
+                    <span class="swipe_price">$3.88</span>
+                    <button>Order</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide card">
+            <div class="card-container">
+                <div class="image">
+                    <img src="assets/img/gallery/toffes-cake.png" alt="">
+                </div>
+                <div class="swipe_card_text">
+                    <span class="food_name">Toffe's Cake</span>
+                    <span class="swipe_loc"><i class="fa-solid fa-location-dot"></i>Top Sticks</span>
+                    <span class="swipe_price">$3.88</span>
+                    <button>Order</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide card">
+            <div class="card-container">
+                <div class="image">
+                    <img src="assets/img/gallery/dancake.png" alt="">
+                </div>
+                <div class="swipe_card_text">
+                    <span class="food_name">Dancake</span>
+                    <span class="swipe_loc"><i class="fa-solid fa-location-dot"></i>Cake World</span>
+                    <span class="swipe_price">$3.88</span>
+                    <button>Order</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide card">
+            <div class="card-container">
+                <div class="image">
+                    <img src="assets/img/gallery/crispy-sandwitch.png" alt="">
+                </div>
+                <div class="swipe_card_text">
+                    <span class="food_name">Crispy Sandwitch</span>
+                    <span class="swipe_loc"><i class="fa-solid fa-location-dot"></i>Fastfood Dine</span>
+                    <span class="swipe_price">$3.88</span>
+                    <button>Order</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide card">
+            <div class="card-container">
+                <div class="image">
+                    <img src="assets/img/gallery/thai-soup.png" alt="">
+                </div>
+                <div class="swipe_card_text">
+                    <span class="food_name"><Table>Thai Soup</Table></span>
+                    <span class="swipe_loc"><i class="fa-solid fa-location-dot"></i>Foody Man</span>
+                    <span class="swipe_price">$3.88</span>
+                    <button>Order</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide card">
+            <div class="card-container">
+                <div class="image">
+                    <img src="assets/img/gallery/toffes-cake.png" alt="">
+                </div>
+                <div class="swipe_card_text">
+                    <span class="food_name">Toffe's Cake</span>
+                    <span class="swipe_loc"><i class="fa-solid fa-location-dot"></i>Top Sticks</span>
+                    <span class="swipe_price">$3.88</span>
+                    <button>Order</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide card">
+            <div class="card-container">
+                <div class="image">
+                    <img src="assets/img/gallery/dancake.png" alt="">
+                </div>
+                <div class="swipe_card_text">
+                    <span class="food_name">Dancake</span>
+                    <span class="swipe_loc"><i class="fa-solid fa-location-dot"></i>Cake World</span>
+                    <span class="swipe_price">$3.88</span>
+                    <button>Order</button>
+                </div>
+            </div>
+          </div> 
+
+          <div class="swiper-slide card">
+            <div class="card-container">
+                <div class="image">
+                    <img src="assets/img/gallery/cheese-burger.png" alt="">
+                </div>
+                <div class="swipe_card_text">
+                    <span class="food_name">Cheese-burger</span>
+                    <span class="swipe_loc"><i class="fa-solid fa-location-dot"></i>Burger Arena</span>
+                    <span class="swipe_price">$3.88</span>
+                    <button>Order</button>
+                </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide card">
+            <div class="card-container">
+                <div class="image">
+                    <img src="assets/img/gallery/cheese-burger.png" alt="">
+                </div>
+                <div class="swipe_card_text">
+                    <span class="food_name">Cheese-burger</span>
+                    <span class="swipe_loc"><i class="fa-solid fa-location-dot"></i>Burger Arena</span>
+                    <span class="swipe_price">$3.88</span>
+                    <button>Order</button>
+                </div>
+            </div>
+          </div>
+
+          
+        </div>
+        <div class="swiper-button-next" ></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination sp"></div>
+      </div>
+    </section>
+    <section class="res_sec">
+        <h1 class="swipe_head">Featured Restaurants</h1>
+        <div class="fore_card">
+            <div class="foodw disc_card">
+                <div class="res_image disc_img_card">
+                    <img src="assets/img/gallery/food-world.png" alt="">
+                    <div class="tag1"><i class="fa-solid fa-tag"></i>20% off</div>
+                    <div class="tag2"><i class="fa-solid fa-clock"></i>Fast</div>
+                </div>
+                <div>
+                    <div class="res_text">
+                        <img src="assets/img/gallery/food-world-logo.png" alt="">
+                        <div class="resp">
+                            <h4>Food World</h4>
+                            <p><i class="fa-solid fa-star"></i>46</p>
+                        </div>
+                    </div>
+                    <div class="rese">
+                        <p>Opens Tommorow</p>
+                    </div>
+                </div>
+            </div>
+            <div class="foodw disc_card">
+                <div class="res_image disc_img_card">
+                    <img src="assets/img/gallery/pizza-hub.png" alt="">
+                    <div class="tag1"><i class="fa-solid fa-tag"></i>10% off</div>
+                    <div class="tag2"><i class="fa-solid fa-clock"></i>Fast</div>
+                </div>
+                <div>
+                    <div class="res_text">
+                        <img src="assets/img/gallery/pizzahub-logo.png" alt="">
+                        <div class="resp">
+                            <h4>Pizza Hub</h4>
+                            <p><i class="fa-solid fa-star"></i>40</p>
+                        </div>
+                    </div>
+                    <div class="rese">
+                        <p>Opens Tommorow</p>
+                    </div>
+                </div>
+            </div>
+            <div class="foodw disc_card">
+                <div class="res_image disc_img_card">
+                    <img src="assets/img/gallery/donuts-hut.png" alt="">
+                    <div class="tag1"><i class="fa-solid fa-tag"></i>15% off</div>
+                    <div class="tag2"><i class="fa-solid fa-clock"></i>Fast</div>
+                </div>
+                <div>
+                    <div class="res_text">
+                        <img src="assets/img/gallery/donuts-hut-logo.png" alt="">
+                        <div class="resp">
+                            <h4>Donuts Hut</h4>
+                            <p><i class="fa-solid fa-star"></i>20</p>
+                        </div>
+                    </div>
+                    <div class="rese green">
+                        <p>Open Now</p>
+                    </div>
+                </div>
+            </div>
+            <div class="foodw disc_card">
+                <div class="res_image disc_img_card">
+                    <img src="assets/img/gallery/donuthut.png" alt="">
+                    <div class="tag1"><i class="fa-solid fa-tag"></i>15% off</div>
+                    <div class="tag2"><i class="fa-solid fa-clock"></i>Fast</div>
+                </div>
+                <div>
+                    <div class="res_text">
+                        <img src="assets/img/gallery/donuts-hut-logo.png" alt="">
+                        <div class="resp">
+                            <h4>Donut Hut</h4>
+                            <p><i class="fa-solid fa-star"></i>50</p>
+                        </div>
+                    </div>
+                    <div class="rese green">
+                        <p>Open Now</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fore_card">
+            <div class="foodw disc_card">
+                <div class="res_image disc_img_card">
+                    <img src="assets/img/gallery/ruby-tuesday.png" alt="">
+                    <div class="tag1"><i class="fa-solid fa-tag"></i>15% off</div>
+                    <div class="tag2"><i class="fa-solid fa-clock"></i>Fast</div>
+                </div>
+                <div>
+                    <div class="res_text">
+                        <img src="assets/img/gallery/ruby-tuesday-logo.png" alt="">
+                        <div class="resp">
+                            <h4>Ruby Tuesday</h4>
+                            <p><i class="fa-solid fa-star"></i>50</p>
+                        </div>
+                    </div>
+                    <div class="rese green">
+                        <p>Open Now</p>
+                    </div>
+                </div>
+            </div>
+            <div class="foodw disc_card">
+                <div class="res_image disc_img_card">
+                    <img src="assets/img/gallery/kuakata.png" alt="">
+                    <div class="tag1"><i class="fa-solid fa-tag"></i>20% off</div>
+                    <div class="tag2"><i class="fa-solid fa-clock"></i>Fast</div>
+                </div>
+                <div>
+                    <div class="res_text">
+                        <img src="assets/img/gallery/kuakata-logo.png" alt="">
+                        <div class="resp">
+                            <h4>Kuakata Fried Chicken</h4>
+                            <p><i class="fa-solid fa-star"></i>42</p>
+                        </div>
+                    </div>
+                    <div class="rese green">
+                        <p>Open Now</p>
+                    </div>
+                </div>
+            </div>
+            <div class="foodw disc_card">
+                <div class="res_image disc_img_card">
+                    <img src="assets/img/gallery/red-square.png" alt="">
+                    <div class="tag1"><i class="fa-solid fa-tag"></i>10% off</div>
+                    <div class="tag2"><i class="fa-solid fa-clock"></i>Fast</div>
+                </div>
+                <div>
+                    <div class="res_text">
+                        <img src="assets/img/gallery/red-square-logo.png" alt="">
+                        <div class="resp">
+                            <h4>Red square</h4>
+                            <p><i class="fa-solid fa-star"></i>50</p>
+                        </div>
+                    </div>
+                    <div class="rese green">
+                        <p>Open Now</p>
+                    </div>
+                </div>
+            </div>
+            <div class="foodw disc_card">
+                <div class="res_image disc_img_card">
+                    <img src="assets/img/gallery/taco-bell.png" alt="">
+                    <div class="tag1"><i class="fa-solid fa-tag"></i>15% off</div>
+                    <div class="tag2"><i class="fa-solid fa-clock"></i>Fast</div>
+                </div>
+                <div>
+                    <div class="res_text">
+                        <img src="assets/img/gallery/taco-bell-logo.png" alt="">
+                        <div class="resp">
+                            <h4>Taco Bell</h4>
+                            <p><i class="fa-solid fa-star"></i>46</p>
+                        </div>
+                    </div>
+                    <div class="rese green">
+                        <p>Open Now</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button>View all <i class="fa-solid fa-angle-right"></i></button>
+    </section>
+    <section class="search swipe">
+       
+        <div class="search_nav">
+            <h1>Search by Food</h1>
+            <div class="rights">
+                <p>VIEW ALL<i class="fa-solid fa-angle-right"></i></p>
+                
+            </div>
+        </div>         
+        <div class="swiper mySwiper container con1">
+
+            <div class="swiper-wrapper content">
+    
+              <div class="swiper-slide card">
+                <div class="search_item card-container">
+                    <div class="piz">
+                        <img src="assets/img/gallery/search-pizza.png" alt="">
+                        <p>Pizza</p>
+                    </div>
+                </div>
+              </div>
+    
+              <div class="swiper-slide card">
+                <div class="search_item card-container">
+                    <div class="piz">
+                        <img src="assets/img/gallery/search-pizza.png" alt="">
+                        <p>Pizza</p>
+                    </div>
+                </div>
+              </div>
+    
+              <div class=" swiper-slide card">
+                <div class="card-container search_item">
+                    <div class="piz">
+                        <img src="assets/img/gallery/search-pizza.png" alt="">
+                        <p>Pizza</p>
+                    </div>
+                </div>
+              </div>
+    
+              <div class="swiper-slide card">
+                <div class="card-container search_item">
+                    <div class="piz">
+                        <img src="assets/img/gallery/search-pizza.png" alt="">
+                        <p>Pizza</p>
+                    </div>
+                </div>
+              </div>
+    
+              <div class="swiper-slide card">
+                <div class="card-container search_item">
+                    <div class="piz">
+                        <img src="assets/img/gallery/search-pizza.png" alt="">
+                        <p>Pizza</p>
+                    </div>
+                </div>
+              </div>
+    
+              <div class="swiper-slide card">
+                <div class="card-container search_item">
+                    <div class="piz">
+                        <img src="assets/img/gallery/search-pizza.png" alt="">
+                        <p>Pizza</p>
+                    </div>
+                </div>
+              </div>
+    
+              <div class="swiper-slide card">
+                <div class="card-container search_item">
+                    <div class="piz">
+                        <img src="assets/img/gallery/search-pizza.png" alt="">
+                        <p>Pizza</p>
+                    </div>
+                </div>
+              </div> 
+    
+              <div class="swiper-slide card">
+                <div class="card-container search_item">
+                    <div class="piz">
+                        <img src="assets/img/gallery/search-pizza.png" alt="">
+                        <p>Pizza</p>
+                    </div>
+                </div>
+              </div>
+    
+              <div class="swiper-slide card">
+                <div class="card-container search_item">
+                    <div class="piz">
+                        <img src="assets/img/gallery/search-pizza.png" alt="">
+                        <p>Pizza</p>
+                    </div>
+                </div>
+              </div>
+    
+              
+            </div>
+            <div class="swiper-button-next searchn"></div>
+            <div class="swiper-button-prev searchp"></div>
+          </div>
+    </section>
+    <section class="get">
+
+        <div class="get_nav">
+            <div class="get_card1">
+                <img src="assets/img/icons/discounts.png" alt="">
+                <h2>Daily<br>Discounts</h2>
+            </div>
+            <div class="get_card1 bor">
+                <img src="assets/img/icons/live-tracking.png" alt="">
+                <h2>Live<br>Tracking</h2>
+            </div>
+            <div class="get_card1 bor">
+                <img src="assets/img/icons/quick-delivery.png" alt="">
+                <h2>Quick<br>Delivery</h2>
+            </div>
+        </div>
+
+        <div class="app">
+            <div class="cta_img">
+                <img src="assets/img/gallery/phone-cta-one.png" alt="">
+            </div>
+            <div class="app_details">
+                <h1>Install the app</h1>
+                <p>It's never been easier to order food. Look for the finest <br> discounts and you'll be lost in a world of delectable food. </p>
+                <div class="play">
+                    <img src="assets/img/gallery/app-store.svg" alt="" style="display: inline;">
+                    <img src="assets/img/gallery/google-play.svg" alt="" style="display: inline;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="deals">
+        <div class="deal_item ">
+            <div class="deal_text">
+                <h1>Best deals<span> Crispy Sandwich</span></h1>
+                <p>Enjoy the large sizes of sandwiches. Complete your meals with the perfect slice of sandwiches</p>
+                <button>PROCEED TO ORDER <i class="fa-solid fa-angle-right"></i></button>
+            </div>
+            <div class="deal_pic">
+                <img src="assets/img/gallery/crispy-sandwiches.png" alt="">
+            </div>
+        </div>
+
+        <div class="deal_item reverse">
+            <div class="deal_text">
+                <h1>Celebrate parties with<span> Fried Chicken</span></h1>
+                <p>Get the best fried chicken smeared with a lip smacking lemon chili flavor. Check out best deals for fried chicken.</p>
+                <button>PROCEED TO ORDER <i class="fa-solid fa-angle-right"></i></button>
+            </div>
+            <div class="deal_pic">
+                <img src="assets/img/gallery/fried-chicken.png" alt="">
+            </div>
+        </div>
+
+        <div class="deal_item ">
+            <div class="deal_text">
+                <h1>Wanna eat hot &<span> Spicy Pizza?</span></h1>
+                <p>Pair up with a friend and enjoy the hot and crispy pizza pops. Try it with the best deals.s</p>
+                <button>PROCEED TO ORDER <i class="fa-solid fa-angle-right"></i></button>
+            </div>
+            <div class="deal_pic">
+                <img src="assets/img/gallery/pizza.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="ready">
+        <h1>Are you ready to order with the best order?</h1>
+        <button>PROCEED TO ORDER <i class="fa-solid fa-angle-right"></i></button>
+    </section>
+    <footer>
+        <h1>OUR TOP CITIES</h1>
+        <div class="col1">
+            <div class="row">
+                <a href="#">San Fransisco</a>
+                <a href="#">Miami</a>
+                <a href="#">San Diego</a>
+                <a href="#">East Bay</a>
+                <a href="#">Long Beach</a>
+            </div>
+            <div class="row">
+                <a href="#">San Fransisco</a>
+                <a href="#">Miami</a>
+                <a href="#">San Diego</a>
+                <a href="#">East Bay</a>
+                <a href="#">Long Beach</a>
+            </div>
+            <div class="row">
+                <a href="#">San Fransisco</a>
+                <a href="#">Miami</a>
+                <a href="#">San Diego</a>
+                <a href="#">East Bay</a>
+                <a href="#">Long Beach</a>
+            </div>
+            <div class="row">
+                <a href="#">San Fransisco</a>
+                <a href="#">Miami</a>
+                <a href="#">San Diego</a>
+                <a href="#">East Bay</a>
+                <a href="#">Long Beach</a>
+            </div>
+            <div class="row">
+                <a href="#">San Fransisco</a>
+                <a href="#">Miami</a>
+                <a href="#">San Diego</a>
+                <a href="#">East Bay</a>
+                <a href="#">Long Beach</a>
+            </div>
+        </div>
+        <hr>
+        <div class="col1">
+            <div class="row">
+                <h1>COMPANY</h1>
+                <a href="#">San Fransisco</a>
+                <a href="#">Miami</a>
+                <a href="#">San Diego</a>
+                <a href="#">East Bay</a>
+                <a href="#">Long Beach</a>
+            </div>
+            <div class="row">
+                <h1>CONTACT</h1>
+                <a href="#">San Fransisco</a>
+                <a href="#">Miami</a>
+                <a href="#">San Diego</a>
+                <a href="#">East Bay</a>
+                <a href="#">Long Beach</a>
+            </div>
+            <div class="row">
+                <h1>LEGAL</h1>
+                <a href="#">San Fransisco</a>
+                <a href="#">Miami</a>
+                <a href="#">San Diego</a>
+                <a href="#">East Bay</a>
+                <a href="#">Long Beach</a>
+            </div>
+            <div class="row">
+                <h1>Legal</h1>
+                <a href="#">San Fransisco</a>
+                <a href="#">Miami</a>
+                <a href="#">San Diego</a>
+                <a href="#">East Bay</a>
+                <a href="#">Long Beach</a>
+            </div>
+        </div>
+        <div class="row_form">
+            <h4>FOLLOW US</h4>
+            <div class="row_icons">
+                <a href=""><i class="fa-brands fa-instagram fa-beat"></i></a>
+                <a href=""><i class="fa-brands fa-facebook fa-beat"></i></a>
+                <a href=""><i class="fa-brands fa-twitter fa-beat"></i></a>
+            </div>
+            <h2>Recieve exclusive offers and discount in your mailbox</h2>
+            <form action="">
+                <div class="mail_icons">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" name="" id="" placeholder="Enter Mail" class="mail" id="email">
+                </div>
+                <input type="submit" value="Subscribe" class="sus">
+            </form>
+            <hr>
+        </div>
+        <div class="col2">
+            <p>All rights Reserved © ARQ Tech, 2023</p>
+            <p>Made with 🧡 by Farzak</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
-</html
+</html>
