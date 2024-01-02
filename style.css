@@ -622,7 +622,7 @@ element.style {
 .foodw  div:last-child{
     margin-top: 1em;
 }
-.res_sec{
+.res_sec, .fore_card{
     padding-inline: 1em !important;
 }
 .res_sec h1{
