@@ -9,11 +9,11 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <link rel="shortcut icon" href="assets\images\favicons\favicon-32x32.png" type="image/x-icon">
     </head>
     <style>
         body{
             overflow-y: scroll;
-            padding-inline:2em;
         }
     </style>
     <body>
@@ -45,7 +45,12 @@
                                 <a href="home.html" class="nav_link"><i class="fa-solid fa-house"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="nav_link"><img src="assets/images/avatars/01.png" alt=""></a><p>Fareed Zakariyah</p>
+                                <a href="#" onclick="dropdown()" class="nav_link"><img src="assets/images/avatars/01.png" alt=""></a><p>Fareed Zakariyah</p>
+                                <div class="dropdwn" id="dropdwn">
+                                    <a href="profile.html">Profile</a>
+                                    <hr class="hr1">
+                                    <a href="login.html">Log out</a>
+                                </div>
                             </li>
                         </div>
                     </ul>
@@ -258,9 +263,17 @@
                 
             </div>
         </div>
-        <script src="main.js"></script>
+        
+        <div class="loader">
+            <img src="assets/images/design/logo.svg" alt="" class="circle">
+        </div>
+        <script src="main.js"></script> 
     </body>
-    <div class="loader">
-        <img src="assets/images/design/logo.svg" alt="" class="circle">
-    </div>
+    <footer>
+        <span class="flex" style="gap: 1em;">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+        </span>
+        <p>©2024 Arq Tech, Made with 🧡 by Farzak.</p>
+    </footer>
 </html>

@@ -79,7 +79,23 @@ function myfunction(){
   }
   ;
 }
+function myfunction1(){
+  if (document.getElementById('no1').innerText == '14') {
+    document.getElementById('no1').innerText = '15'
+  }else if(document.getElementById('no1').innerText == '15'){
+    document.getElementById('no1').innerText = '14'
+  }
+  ;
+}
 function like(){
   var element = document.getElementById('path3');
   element.classList.toggle('path4');
+}
+function like1(){
+  var element = document.getElementById('path5');
+  element.classList.toggle('path4');
+}
+function dropdown(){
+  var drop = document.getElementById('dropdwn')
+  drop.classList.toggle('dropdwn_new')
 }

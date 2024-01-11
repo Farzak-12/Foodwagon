@@ -17,12 +17,32 @@
 </head>
 <style>
     .swiper {
-      width: 90%;
-      height: 80%;
+      width: 95%;
+      height: 120%;
     }
-
+    .swiper-wrapper{
+        height: 90% !important;
+    }
+    .swiper-pagination{
+        position: absolute !important;
+        top: 0;
+    }
     .swiper-slide {
       display: flex;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   </style>
 </style>
@@ -153,64 +173,55 @@
         
         <div class="swiper-wrapper content">
         
-          <div class="swiper-slide card" >
-            <div class="card-container">
-                <div class="image">
-                    <img src="assets/img/gallery/cheese-burger.png" alt="">
-                </div>
-                <div class="swipe_card_text">
-                    <span class="food_name">Cheese-burger</span>
-                    <span class="swipe_loc"><i class="fa-solid fa-location-dot"></i>Burger Arena</span>
-                    <span class="swipe_price">$3.88</span>
-                    <button>Order</button>
-                </div>
+          <div class="swiper-slide card card-container" >
+            <div class="image">
+                <img src="assets/img/gallery/cheese-burger.png" alt="">
+            </div>
+            <div class="swipe_card_text">
+                <span class="food_name">Cheese-burger</span>
+                <span class="swipe_loc"><i class="fa-solid fa-location-dot"></i>Burger Arena</span>
+                <span class="swipe_price">$3.88</span>
+                <button>Order</button>
             </div>
           </div>
 
-          <div class="swiper-slide card">
-            <div class="card-container">
-                <div class="image">
-                    <img src="assets/img/gallery/toffes-cake.png" alt="">
-                </div>
-                <div class="swipe_card_text">
-                    <span class="food_name">Toffe's Cake</span>
-                    <span class="swipe_loc"><i class="fa-solid fa-location-dot"></i>Top Sticks</span>
-                    <span class="swipe_price">$3.88</span>
-                    <button>Order</button>
-                </div>
+          <div class="swiper-slide card card-container">
+            <div class="image">
+                <img src="assets/img/gallery/toffes-cake.png" alt="">
+            </div>
+            <div class="swipe_card_text">
+                <span class="food_name">Toffe's Cake</span>
+                <span class="swipe_loc"><i class="fa-solid fa-location-dot"></i>Top Sticks</span>
+                <span class="swipe_price">$3.88</span>
+                <button>Order</button>
             </div>
           </div>
 
-          <div class="swiper-slide card">
-            <div class="card-container">
-                <div class="image">
-                    <img src="assets/img/gallery/dancake.png" alt="">
-                </div>
-                <div class="swipe_card_text">
-                    <span class="food_name">Dancake</span>
-                    <span class="swipe_loc"><i class="fa-solid fa-location-dot"></i>Cake World</span>
-                    <span class="swipe_price">$3.88</span>
-                    <button>Order</button>
-                </div>
+          <div class="swiper-slide card card-container">
+            <div class="image">
+                <img src="assets/img/gallery/dancake.png" alt="">
+            </div>
+            <div class="swipe_card_text">
+                <span class="food_name">Dancake</span>
+                <span class="swipe_loc"><i class="fa-solid fa-location-dot"></i>Cake World</span>
+                <span class="swipe_price">$3.88</span>
+                <button>Order</button>
             </div>
           </div>
 
-          <div class="swiper-slide card">
-            <div class="card-container">
-                <div class="image">
-                    <img src="assets/img/gallery/crispy-sandwitch.png" alt="">
-                </div>
-                <div class="swipe_card_text">
-                    <span class="food_name">Crispy Sandwitch</span>
-                    <span class="swipe_loc"><i class="fa-solid fa-location-dot"></i>Fastfood Dine</span>
-                    <span class="swipe_price">$3.88</span>
-                    <button>Order</button>
-                </div>
+          <div class="swiper-slide card card-container">
+            <div class="image">
+                <img src="assets/img/gallery/crispy-sandwitch.png" alt="">
+            </div>
+            <div class="swipe_card_text">
+                <span class="food_name">Crispy Sandwitch</span>
+                <span class="swipe_loc"><i class="fa-solid fa-location-dot"></i>Fastfood Dine</span>
+                <span class="swipe_price">$3.88</span>
+                <button>Order</button>
             </div>
           </div>
 
-          <div class="swiper-slide card">
-            <div class="card-container">
+          <div class="swiper-slide card card-container">
                 <div class="image">
                     <img src="assets/img/gallery/thai-soup.png" alt="">
                 </div>
@@ -220,11 +231,9 @@
                     <span class="swipe_price">$3.88</span>
                     <button>Order</button>
                 </div>
-            </div>
           </div>
 
-          <div class="swiper-slide card">
-            <div class="card-container">
+          <div class="swiper-slide card card-container">
                 <div class="image">
                     <img src="assets/img/gallery/toffes-cake.png" alt="">
                 </div>
@@ -234,11 +243,9 @@
                     <span class="swipe_price">$3.88</span>
                     <button>Order</button>
                 </div>
-            </div>
           </div>
 
-          <div class="swiper-slide card">
-            <div class="card-container">
+          <div class="swiper-slide card card-container">
                 <div class="image">
                     <img src="assets/img/gallery/dancake.png" alt="">
                 </div>
@@ -248,11 +255,9 @@
                     <span class="swipe_price">$3.88</span>
                     <button>Order</button>
                 </div>
-            </div>
           </div> 
 
-          <div class="swiper-slide card">
-            <div class="card-container">
+          <div class="swiper-slide card card-container">
                 <div class="image">
                     <img src="assets/img/gallery/cheese-burger.png" alt="">
                 </div>
@@ -262,11 +267,9 @@
                     <span class="swipe_price">$3.88</span>
                     <button>Order</button>
                 </div>
-            </div>
           </div>
 
-          <div class="swiper-slide card">
-            <div class="card-container">
+          <div class="swiper-slide card card-container">
                 <div class="image">
                     <img src="assets/img/gallery/cheese-burger.png" alt="">
                 </div>
@@ -276,14 +279,12 @@
                     <span class="swipe_price">$3.88</span>
                     <button>Order</button>
                 </div>
-            </div>
           </div>
-
           
         </div>
         <div class="swiper-button-next" ></div>
         <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination sp"></div>
+        <div class="swiper-pagination sp" style="margin-top: 1em !important;"></div>
       </div>
     </section>
     <section class="res_sec">
@@ -471,8 +472,8 @@
               <div class="swiper-slide card">
                 <div class="search_item card-container">
                     <div class="piz">
-                        <img src="assets/img/gallery/search-pizza.png" alt="">
-                        <p>Pizza</p>
+                        <img src="assets/img/gallery/burger.png" alt="">
+                        <p>Burger</p>
                     </div>
                 </div>
               </div>
@@ -480,8 +481,8 @@
               <div class=" swiper-slide card">
                 <div class="card-container search_item">
                     <div class="piz">
-                        <img src="assets/img/gallery/search-pizza.png" alt="">
-                        <p>Pizza</p>
+                        <img src="assets/img/gallery/noodles.png" alt="">
+                        <p>Noodles</p>
                     </div>
                 </div>
               </div>
@@ -489,8 +490,8 @@
               <div class="swiper-slide card">
                 <div class="card-container search_item">
                     <div class="piz">
-                        <img src="assets/img/gallery/search-pizza.png" alt="">
-                        <p>Pizza</p>
+                        <img src="assets/img/gallery/sub-sandwich.png" alt="">
+                        <p>Sandwich</p>
                     </div>
                 </div>
               </div>
@@ -498,8 +499,8 @@
               <div class="swiper-slide card">
                 <div class="card-container search_item">
                     <div class="piz">
-                        <img src="assets/img/gallery/search-pizza.png" alt="">
-                        <p>Pizza</p>
+                        <img src="assets/img/gallery/chowmein.png" alt="">
+                        <p>Chowmein</p>
                     </div>
                 </div>
               </div>
@@ -507,8 +508,8 @@
               <div class="swiper-slide card">
                 <div class="card-container search_item">
                     <div class="piz">
-                        <img src="assets/img/gallery/search-pizza.png" alt="">
-                        <p>Pizza</p>
+                        <img src="assets/img/gallery/steak.png" alt="">
+                        <p>Steak</p>
                     </div>
                 </div>
               </div>

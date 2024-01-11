@@ -29,6 +29,10 @@ a:visited{
     from{margin-left: 0%;}
     to{margin-left: 100%;}
 }
+@keyframes over {
+    from{overflow:hidden;}
+    to{overflow: scroll;}
+}
 main{
     display: flex;
     overflow: hidden;
@@ -38,11 +42,11 @@ main{
     height: 100vh;
     background-color: white;
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     display: grid;
     top: 0;
     left: 0;
-    animation: opacity 8s linear 1 forwards;
+    animation: opacity 9s linear 1 forwards;
     z-index: 5;
     overflow: hidden;
 }
@@ -133,8 +137,8 @@ body{
     background-color: #faf9f5;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
-    height: 1000vh;
     overflow : hidden;
+    animation: over 9s linear 1 forwards;
 }
 .sign{
     width: 30%;
@@ -353,7 +357,6 @@ main::after{
     margin-inline: auto;
     display: block;
     width: fit-content;
-    margin-block: 1em !important;
 }
 #rem:checked {
     background-color: #fff;
@@ -453,6 +456,25 @@ opacity: 0.5; }
     transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
 
 }
+.dropdwn{
+    position: absolute;
+    display: grid;
+    gap: 0.5em;
+    border-radius: 0.5rem;
+    padding: 1em;
+    top: 7em;
+    background-color: #fff;
+    opacity: 0;
+    z-index: -50;
+    transition: all 400ms ease-in-out;
+}
+.dropdwn_new{
+    transition: all 0.6s cubic-bezier(0.39, 0.575, 0.565, 1);
+    opacity: 100%;
+    z-index: 1;
+    display: grid;
+    top: 4em;
+}
 .search_icons input:focus, .messBox input:focus{
     color: #959895;
     background-color: #fff;
@@ -493,7 +515,7 @@ opacity: 0.5; }
     bottom: 0;
     left: 0;
     float: right;
-    margin-left: 85%;
+    margin-left: 82%;
 }
 .messBox svg{
     place-self: center;
@@ -1318,6 +1340,7 @@ h4{
 .main2{
     display: flex;
     gap: 2em;
+    padding-inline: 2rem;
 }
 .right_main2{
     width: 23%;
@@ -1330,6 +1353,7 @@ h4{
     justify-content: space-between;
     margin-top: 5em;
     flex-wrap: wrap;
+    margin-inline: 2em;
 }
 .nav1 .leftn a{
     color: #EA6A12;
@@ -1998,6 +2022,13 @@ small{
     color: #07143B;
     justify-content: space-between;
 }
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+    background-color: white;
+    margin-top: 1em;
+}
 @media screen and (max-width:1200px) {
     .sign{
         width: 60%;
@@ -2102,6 +2133,9 @@ small{
     .page_row .rec{
         width: 48% !important;
     }
+    .messBox div{
+        margin-left:85% ;
+    }
 }
 
 @media screen and (max-width:960px) {
@@ -2159,10 +2193,13 @@ small{
         display: none;
     }
     .messBox div {
-        left:-1.5em;
+        margin-left:75%;
     }
     .main4{
         padding-inline: 1em;
+    }
+    .min{
+        display: none;
     }
 }
 @media screen and (min-width:1027px) {

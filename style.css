@@ -514,17 +514,9 @@ li{
 .swipe_card_text button:hover{
     background-color:#d35811;
 }
-/* .swiper-wrapper{
-    width:!important;
-} */
 .swiper{
-    width: 100%;
     margin-top: 3em;
 }
-/* .swiper-slide{
-    margin-right: -20px !important;
-    margin-left: -20px !important;
-} */
 .content{
     align-items: center;
 }
@@ -550,9 +542,9 @@ li{
     text-align: center;
 }
 
-.content{
+/* .content{
     width: 3em !important;
-}
+} */
 .swiper-wrapper{
     gap: px;
 }
@@ -563,7 +555,7 @@ li{
     border-radius: 50%;
     position: absolute !important;
     margin-left: 0px !important;
-}
+} 
 element.style {
     width: 100px !important;
     margin-right: 20px !important;
@@ -574,6 +566,7 @@ element.style {
     padding: 30px !important;
     border-radius: 50%;
     width: 0px !important;
+    margin-right: 1em !important;
 }
 .res_image{
     position:relative;
