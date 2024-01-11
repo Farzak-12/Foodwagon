@@ -2202,6 +2202,11 @@ footer{
         display: none;
     }
 }
+@media screen and (max-width:400px){
+    .messBox div{
+        margin-left: 70%;
+    }
+}
 @media screen and (min-width:1027px) {
     .nav{
         height: auto;
